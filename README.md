@@ -1,2 +1,4 @@
 # ecommerce-website
-Updated version of Aliexpress website as part of a college assignment
+Title - Updated version of Aliexpress website as part of a college assignment
+
+For another assignment, I conducted a critical usability and accessibility assessment of the AliExpress website and proposed a redesign aimed at enhancing user experience. One key improvement I suggested was adding a 'Return to Homepage' button to the Help Center page. This simple addition to the navigation bar empowers novice users to quickly return to the homepage, improving the site’s navigation and reducing user frustration. I also revamped the homepage design, introducing a more vibrant colour scheme aligned with the AliExpress brand, emphasising key elements like the price display to capture user attention. The footer was enhanced with a hover effect, transitioning to a dark-mustard colour, reinforcing AliExpress's branding. These updates aim to improve both usability and visual appeal, making the website more user-friendly and visually engaging.
