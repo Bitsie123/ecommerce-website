@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html prefix="og: https://ogp.me/ns/website#" lang="en_US">
+<head>
+    <link rel="stylesheet" type="text/css" href="https://assets.alicdn.com/g/ae-fe/header-ui/0.0.94/src/ae-header.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>AliExpress Prototype</title>
+</head>
+
+<body>
+
+<!-- HEADING DIV -->
+<div class="header header-outer-container header-special-container header-tag-natural" id="header" data-spm="1000002">
+    <div class="header-wrap container">
+        <div class="hm-left hm-left-store">
+            <div class="site-logo inside-page-logo">
+                <a href="index.html"><span class="logo-base" style="margin-left: 35px;">Smarter Shopping, Better Living!</span></a>
+            </div>
+        </div>
+
+        <div class="hm-right">
+            <div class="header-right-content">
+                <div class="right-shopcart">
+                    <i class="right-cart-icon"></i>
+                    <span class="right-cart-number" id="right-cart-num">0</span>
+                </div>
+            </div>
+            <img style="height: 84px; top: 2px; position: absolute; right: 0;" src="https://ae01.alicdn.com/kf/Sff57b288a25b4d7898b235c714c884eaO/240x168.png" alt="download APP"/>
+        </div>
+
+        <div class="hm-middle">
+            <form id="form-searchbar" class="searchbar-form" action="/wholesale" method="get">
+                <input type="hidden" id="catId" name="catId" value="0" />
+                <input type="hidden" id="historyTab" />
+                <input type="hidden" id="historySearchInput" />
+                <input type="hidden" id="historySearchCountry" />
+                <input type="hidden" id="initiative_id" name="initiative_id" value="" />
+                <div class="searchbar-operate-box">
+                    <div id="search-cate" class="search-category hidden-sm" style="display:none">
+                    <div class="search-cate-title"><span id="search-category-value" class="search-category-value">All Categories</span></div>
+                    </div>
+                    <input type="submit" class="search-button" value="" disabled/>
+                </div>
+                <div class="search-key-box">
+                    <input type="text" placeholder="Shopping for..." maxlength="50" autocomplete="off" value="" name="SearchText" class="search-key" id="search-key" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- SELECTION DIV -->
+<div class="sorting-options">
+    <label for="sort-by">Sort By:</label>
+    <button>Best Match</button>
+    <button>Colour</button>
+    <button>Orders</button>
+
+<!-- REFERENCE
+  Up down arrow HTML symbol, character and entity codes (no date) HTML Arrows.
+  Available at: https://www.toptal.com/designers/htmlarrows/arrows/up-down-arrow/ -->
+  <!-- Up/down button -->
+    <button class="price-button">Price <span>&#8597;</span></button>
+</div>
+
+<!-- PRODUCTS -->
+<div class="products">
+  <!-- Example Products -->
+    <div class="product">
+        <img src="products/product1.jpeg" class="product-image">
+        <h5>Scarf</h5>
+        <p>A.WAVE Softer than Cashmere Wool Touch Tassel </p>
+        <p>Ends Plaid Check Solid Scarf.</p>
+        <p class="price">Price: €02.34</p>
+    </div>
+
+    <div class="product">
+        <img src="products/product2.jpeg" class="product-image">
+        <h5>Shoes</h5>
+        <p>Barefoot Aqua Shoes Swim Shoes for Beach</p>
+        <p class="price">Price: €05.67</p>
+    </div>
+
+    <div class="product">
+        <img src="products/product3.jpeg" class="product-image">
+        <h5>Car Bin</h5>
+        <p>1pc Car Trash Can With Lid & Side Door </p>
+        <p>Hanging Design</p>
+        <p class="price">Price: €01.50</p>
+    </div>
+
+    <div class="product">
+        <img src="products/product4.jpeg" class="product-image">
+        <h5>Earphones</h5>
+        <p>Beats Flex – All-Day Wireless Earphones - Smoke Gray</p>
+        <p class="price">Price: €07.80</p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!-- REFERENCE - AliExpress soruce code
+  AliExpress (no date) Online shopping for popular electronics, fashion, Home & Garden, toys & sports, automobiles and more., AliExpress.
+  Available at: https://best.aliexpress.com/?lan=en&amp=&src=google&albch=fbrnd&acnt=304-410-9721&isdl=y&aff_short_key=UneMJZVf&albcp=2043897087&albag=77948300611&slnk=&trgt=kwd-14802285088&plac=&crea=357666257741&netw=g&device=c&mtctp=e&memo1=1t1&albbt=Google_7_fbrnd&aff_platform=google&albagn=888888
+-->
+<!DOCTYPE html>
+<html prefix="og: https://ogp.me/ns/website#" lang="en_US">
+<head>
+    <link rel="stylesheet" type="text/css" href="https://assets.alicdn.com/g/ae-fe/header-ui/0.0.94/src/ae-header.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>AliExpress Prototype</title>
+</head>
+
+
+<body>
+
+<!-- HEADING DIV -->
+<div class="header header-outer-container header-special-container header-tag-natural" id="header" data-spm="1000002">
+    <div class="header-wrap container">
+        <div class="hm-left hm-left-store">
+            <div class="site-logo inside-page-logo">
+                <a href=""><span class="logo-base" style="margin-left: 35px;">Smarter Shopping, Better Living!</span></a>
+            </div>
+        </div>
+
+        <div class="hm-right">
+            <div class="header-right-content">
+                <div class="right-shopcart">
+                    <i class="right-cart-icon"></i>
+                    <span class="right-cart-number" id="right-cart-num">0</span>
+                </div>
+            </div>
+            <img style="height: 84px; top: 2px; position: absolute; right: 0;" src="https://ae01.alicdn.com/kf/Sff57b288a25b4d7898b235c714c884eaO/240x168.png" alt="download APP"/>
+        </div>
+
+        <div class="hm-middle">
+            <form id="form-searchbar" class="searchbar-form" action="/wholesale" method="get">
+                <input type="hidden" id="catId" name="catId" value="0" />
+                <input type="hidden" id="historyTab" />
+                <input type="hidden" id="historySearchInput" />
+                <input type="hidden" id="historySearchCountry" />
+                <input type="hidden" id="initiative_id" name="initiative_id" value="" />
+                <div class="searchbar-operate-box">
+                    <div id="search-cate" class="search-category hidden-sm" style="display:none">
+                    <div class="search-cate-title"><span id="search-category-value" class="search-category-value">All Categories</span></div>
+                    </div>
+                    <input type="submit" class="search-button" value="" disabled/>
+                </div>
+                <div class="search-key-box">
+                    <input type="text" placeholder="Shopping for..." maxlength="50" autocomplete="off" value="" name="SearchText" class="search-key" id="search-key" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- NAVIGATION BAR -->
+<!-- Categories Div -->
+<div class="categoriesDiv">
+  <!-- All Categories combobox -->
+    <div class="categories-dropdown">
+        <select class="categories-dropdown-select">
+            <option value="" disabled selected>All Categories</option>
+            <option value="0">Accessories</option>
+            <option value="1">Consumer Electronics</option>
+            <option value="2">Home Improvement & Lighting</option>
+            <option value="3">Jewelry & Watches</option>
+            <option value="4">Hair Extensions & Wigs</option>
+            <option value="5">Home & Garden</option>
+            <option value="6">Men's Clothing</option>
+            <option value="7">Women's Clothing</option>
+            <option value="8">Home Appliances</option>
+            <option value="9">Automotive & Motocycle</option>
+            <option value="10">Luggages & Bags</option>
+            <option value="11">Shoes</option>
+            <option value="12">Special Occasion Costumes</option>
+            <option value="13">Sport & Entertainment</option>
+            <option value="14">Toys & Games</option>
+            <option value="15">Babies & Kids</option>
+            <option value="16">Phone & Telecommunications</option>
+            <option value="17">Furniture</option>
+            <option value="18">Pet Supplies</option>
+            <option value="19">Security & Protection</option>
+            <option value="20">Beauty & Health</option>
+            <option value="21">Tools & Industrial</option>
+            <option value="22">Lingerie & Loungwear</option>
+        </select>
+    </div>
+
+  <!-- Buttons div -->
+    <div class="buttons-section">
+        <button class="button">New Deals</button>
+        <button class="button">Bestsellers</button>
+        <button class="button">Top Brands</button>
+        <button class="button">Accessories</button>
+        <button class="button">Consumer Electronics</button>
+    </div>
+
+  <!-- More combobox -->
+    <div>
+      <select class="more-dropdown-select">
+          <option value="" disabled selected>More Popular Categories</option>
+          <option value="1">Home Improvement & Lighting</option>
+          <option value="2">Jewelry & Watches</option>
+          <option value="3">Hair Extensions & Wigs</option>
+          <option value="4">Home & Garden</option>
+          <option value="5">Men's Clothing</option>
+          <option value="6">Women's Clothing</option>
+      </select>
+    </div>
+</div>
+
+<!-- Title and Icons Container -->
+<div class="title-icons-container">
+    <div class="title">
+      <h4>Better choices, better prices</h4>
+    </div>
+    <!-- Image Icons -->
+    <div class="icon-container">
+      <!-- REFERENCE
+        Adobe Stock (2024a) Stock photos, royalty-free images, graphics, vectors & videos, Adobe Stock Icons.
+        Available at: https://stock.adobe.com/ie/
+      -->
+        <div class="icon">
+          <!-- REFERENCE
+            W3Schools (2024) HTML <img> tag, HTML img tag.
+            Available at: https://www.w3schools.com/tags/tag_img.asp
+          -->
+            <img src="icons/icon1.png" alt="Icon 1">
+            <div class="icon-text">Value for money</div>
+        </div>
+        <div class="icon">
+            <img src="icons/icon2.png" alt="Icon 2">
+            <div class="icon-text">Millions of shoppers Worldwide</div>
+        </div>
+        <div class="icon">
+            <img src="icons/icon3.png" alt="Icon 3">
+            <div class="icon-text">Fast Delivery</div>
+        </div>
+        <div class="icon">
+            <img src="icons/icon4.png" alt="Icon 4">
+            <div class="icon-text">Safe Payment</div>
+        </div>
+        <div class="icon">
+            <img src="icons/icon5.png" alt="Icon 5">
+            <div class="icon-text">Buyer Protection</div>
+        </div>
+        <div class="icon">
+            <img src="icons/icon6.png" alt="Icon 6">
+            <div class="icon-text">Download the App</div>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCTS -->
+<div class="products">
+    <!-- Example Products -->
+    <div class="product">
+        <!-- Link to products page -->
+        <a href="products.html" class="product-link">
+            <img src="products/product1.jpeg" class="product-image">
+            <h5>Scarf</h5>
+            <p>A.WAVE Softer than Cashmere Wool Touch Tassel </p>
+            <p>Ends Plaid Check Solid Scarf.</p>
+            <p class="price">Price: €02.34</p>
+        </a>
+    </div>
+
+    <div class="product">
+        <a href="products.html" class="product-link">
+            <img src="products/product2.jpeg" class="product-image">
+            <h5>Shoes</h5>
+            <p>Barefoot Aqua Shoes Swim Shoes for Beach</p>
+            <p class="price">Price: €05.67</p>
+        </a>
+    </div>
+
+    <div class="product">
+        <a href="products.html" class="product-link">
+            <img src="products/product3.jpeg" class="product-image">
+            <h5>Car Bin</h5>
+            <p>1pc Car Trash Can With Lid & Side Door </p>
+            <p>Hanging Design</p>
+            <p class="price">Price: €01.50</p>
+        </a>
+    </div>
+
+    <div class="product">
+        <a href="products.html" class="product-link">
+            <img src="products/product4.jpeg" class="product-image">
+            <h5>Earphones</h5>
+            <p>Beats Flex – All-Day Wireless Earphones - Smoke Gray</p>
+            <p class="price">Price: €07.80</p>
+        </a>
+    </div>
+</div>
+
+<!-- View More Button -->
+<div class="viewMore">
+    <button class="round-button">View More</button>
+</div>
+
+
+<!-- FOOTER -->
+  <!-- REFERENCE
+    W3Schools (2024a) HTML <footer> tag</footer>, HTML footer Tag.
+    Available at: https://www.w3schools.com/tags/tag_footer.asp
+
+    W3Schools (2024c) Responsive web design - templates, Hotel Template.
+    Available at: https://www.w3schools.com/css/css_rwd_templates.asp
+  -->
+  <!--  - footer code -->
+  <footer class="w3-padding-32 w3-black w3-margin-top" id="footer">
+      <div class="footer-row">
+          <div class="footer-item">
+            <div class="service-list">
+              <h4 class="footer-title">Customer service</h4>
+                <p>Sign In / Register </p>
+              <!-- Help Center page -->
+                <p><a href="HelpCenter.html" style="text-decoration: none;">Help Center</a></p>
+                <p>Transaction Services Agreement for non-EU/UK Consumer</p>
+                <p>Terms and Conditions for EU/EEA/UK Consumers (Transactions)</p>
+                <p>Take our feedback survey</p>
+            </div>
+          </div>
+
+          <div class="footer-item">
+            <div class="service-list">
+              <h4 class="footer-title">Shopping with us</h4>
+                <p>Making payments</p>
+                <p>Delivery options</p>
+                <p>Buyer Protection</p>
+            </div>
+          </div>
+
+          <div class="footer-item">
+            <div class="service-list">
+              <h4 class="footer-title">Collaborate with us</h4>
+                <p>Partnerships</p>
+                <p>Affiliate program</p>
+                <p>DS Center</p>
+                <p>Seller Log In</p>
+                <p>中国卖家入驻</p>
+                <p>Non-Chinese Seller Registration</p>
+            </div>
+          </div>
+
+          <div class="footer-item">
+              <h4 class="footer-title">Pay With</h4>
+            <!-- REFERENCE
+                W3Schools (2024a) Font Awesome Payment Icons, Payment Icons.
+                Available at: https://www.w3schools.com/icons/fontawesome_icons_payment.asp
+            -->
+               <i class="fa fa-cc-visa" id="cardType"></i>
+               <i class="fa fa-cc-mastercard" id="cardType"></i>
+               <i class="fa fa-cc-jcb" id="cardType"></i><br>
+               <i class="fa fa-cc-amex" id="cardType"></i>
+               <i class="fa fa-paypal" id="cardType"></i>
+               <i class="fa fa-cc-discover" id="cardType"></i>
+          </div>
+      </div>
+
+      <div class="footer-row">
+          <div class="footer-item">
+            <div class="service-list" >
+              <h4 class="footer-title">Help</h4>
+                <p>Help Center, Disputes & Reports, Buyer Protection, Report IPR infringement, Regulated Information, Integrity Compliance</p>
+            </div>
+          </div>
+
+          <div class="footer-item">
+            <div class="service-list" >
+              <h4 class="footer-title">AliExpress Multi-language Sites</h4>
+                <p>Russian, Portuguese, Spanish, French, German, Italian, Dutch, Turkish, Japanese, Korean, Thai, Vietnamese, Arabic, Hebrew, Polish</p>
+            </div>
+          </div>
+
+          <div class="footer-item">
+            <div class="service-list" >
+              <h4 class="footer-title">Alibaba Group</h4>
+                <p>Alibaba Group Website, AliExpress, Alimama, Alipay, Fliggy, Alibaba Cloud, Alibaba International, AliTelecom, DingTalk, Juhuasuan, Taobao Marketplace, Tmall, Taobao Global, AliOS, 168</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="w3-xlarge w3-padding-16 w3-center">
+          <h3>Find Us On</h3>
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+      </div>
+  </footer>
+
+</body>
+</html>

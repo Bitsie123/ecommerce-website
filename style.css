@@ -1,0 +1,234 @@
+  .search-key-box {
+    height: 42px !important;
+  }
+
+  .categoriesDiv {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px;
+      background-color: #e52f20;
+      opacity: 0.9;
+  }
+
+
+ /* REFERENCE
+    W3Schools (2024b) How to - round buttons, How To Create Round Buttons.
+    Available at: https://www.w3schools.com/howto/howto_css_round_buttons.asp
+ */
+  .categories-dropdown-select {
+      margin-right: 10px;
+      text-align: center;
+      width: 225px;
+      height: 35px;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 15px; /* Make round border */
+    /* REFERENCE
+        W3Schools (2024e) W3Schools online HTML editor, The transparent Keyword.
+        Available at: https://www.w3schools.com/css/tryit.asp?filename=trycss_transparent
+    */
+      background-color: transparent; /* Make the combobox transparent */
+      color: white;
+      border: 1px solid white;
+  }
+
+  .button {
+      margin-right: 10px;
+      background-color: #f79917;
+      border: black 1px;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      display: inline-block;
+      font-size: 14px;
+  }
+
+  .button:hover {
+      background-color: #c77504;
+      font-style: italic;
+  }
+
+  .more-dropdown-select {
+      text-align: center;
+      width: 225px;
+      height: 35px;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 15px;
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+  }
+
+  select, option {
+    color: black;
+  }
+
+ .title-icons-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 20px;
+ }
+
+ .title h4 {
+   font-size: 18px;
+   color: black;
+   margin-right: 20px;
+   margin-left: 20px;
+   font-style: italic;
+   font-weight: bold;
+ }
+
+ .icon-container {
+  /* REFERENCE
+    MozDevNet (2024) Flex-Grow - CSS: Cascading style sheets: MDN, MDN Web Docs.
+    Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow
+  */
+   flex-grow: 1; /* Allow the icon container to grow and occupy the available space */
+   display: flex;
+   justify-content: center;
+ }
+
+ .icon {
+   margin-right: 80px;
+   text-align: center;
+ }
+
+ .icon img {
+   width: 45px;
+   height: 40px;
+ }
+
+ .icon-text {
+   font-family: Arial;
+   font-size: 10.5px;
+   color: black;
+   text-align: center;
+   margin-top: 5px;
+ }
+
+ .footer-row {
+  /* REFERENCE
+    Webflow (2024) Display: Flex – definition: Webflow glossary, – Definition | Webflow Glossary.
+    Available at: https://webflow.com/glossary/display-flex#:~:text=The%20most%20flexible%20display%20property,and%20distribute%20vertically%20or%20horizontally.
+  */
+    display: flex;
+    justify-content: space-between;
+}
+
+ .footer-item {
+    padding: 10px;
+}
+
+ .service-list {
+   width: 300px;
+ }
+
+.footer-title {
+  font-weight: bold;
+}
+
+ p {
+   font-size: 14px;
+ }
+
+ p:hover {
+   color: #f79917;
+   font-style: italic;
+ }
+
+ #cardType {
+   font-size: 35px;
+ }
+
+ .sorting-options {
+   margin-bottom: 10px;
+   margin-top: 10px;
+   text-align: center;
+   display: flex; /* Add display flex */
+   justify-content: center; /* Center the buttons horizontally */
+ }
+
+ .sorting-options label {
+   margin-right: 10px;
+ }
+
+ .sorting-options button {
+   border: none;
+   border-radius: 20px;
+   width: 100px;
+   height: 25px;
+   color: black;
+   font-size: 10px;
+   margin: 0px;
+   background-color: none;
+ }
+
+ .sorting-options button:hover {
+   background-color: #c2c0c0;
+ }
+
+ .products {
+   margin-top: 25px;
+   margin-bottom: 25px;
+   text-align: center;
+ }
+
+/* REFERENCE
+  W3Schools (2024b) CSS layout - display: Inline-block, CSS Layout - inline-block.
+  Available at: https://www.w3schools.com/css/css_inline-block.asp
+*/
+ .product {
+  display: inline-block;
+  margin: 10px;
+  vertical-align: top;
+/* REFERENCE
+  W3Schools (2024) CSS box-shadow Property, CSS box shadow.
+  Available at: https://www.w3schools.com/css/css3_shadows_box.asp
+*/
+  box-shadow: 5px 5px 5px #e52f20;
+  height: 435px;
+  width: 325px;
+  border: solid #f79917 1px;
+}
+
+.product-link {
+  text-decoration: none;
+}
+
+ .product-image {
+   width: 250px;
+   height: 250px;
+   margin-top: 10px;
+ }
+
+ .price {
+   color: #f79917;
+   font-weight: bold;
+   font-size: 18px;
+ }
+
+ h5 {
+   text-decoration: underline;
+ }
+
+ .viewMore {
+   text-align: center;
+ }
+
+ .round-button {
+    border: none;
+    border-radius: 20px;
+    width: 120px;
+    height: 50px;
+    background-color: #e52f20;
+    color: white;
+    font-size: 16px;
+}
+
+.round-button:hover {
+    background-color: #c77504;
+    font-style: italic;
+}

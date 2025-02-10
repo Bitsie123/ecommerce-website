@@ -1,0 +1,334 @@
+<!-- REFERENCE
+  W3Schools (2024) Start Page Template, W3.CSS templates.
+  Available at: https://www.w3schools.com/w3css/w3css_templates.asp
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Aliexpress Help Center Prototype</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+/* REFERENCE
+  mufc   et al. (2015) Center Search Bar with CSS, Stack Overflow.
+  Available at: https://stackoverflow.com/questions/34363623/center-search-bar-with-css
+*/
+/* Centering the search bar*/
+#searchBar {
+  margin-left: 320px;
+  margin-right: 25px;
+}
+
+#searchButton {
+  height: 50px;
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+/* Added CSS to align items in navbar */
+.navbar-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align items with space between them */
+}
+
+.navbar-item {
+  padding: 16px;
+}
+
+.navbar-item.title {
+  padding-left: 16px; /* Add left padding to title for spacing */
+}
+
+/* AliExpress title within navigation bar */
+.title {
+  padding: 16px;
+  padding-left: 50px;
+  color: white;
+}
+
+/* REFERENCE
+  SchemeColor (no date) AliExpress logo color palette image format, AliExpress Logo Color Scheme " Brand and Logo " SchemeColor.com.
+  Available at: https://www.schemecolor.com/aliexpress-logo-colors.php
+*/
+/* Applying navigation bar colour to the associated colours of AliExpress */
+#navigation_colour {
+  background-color: #e52f20;
+  position: fixed;
+  width: 100%;
+  z-index: 1000; /* Ensure the navigation bar stays on top */
+  top: 0;
+}
+
+#link {
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#home_link {
+  color: black;
+  font-weight: bold;
+}
+
+header {
+  padding: 30px 10px;
+  margin-top: 120px;
+  background-color: white;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+/* Frequenly asked questioms section */
+#askedQuestions {
+  background-color: #f79917;
+  opacity: 0.8;
+}
+
+/* Style for the question links */
+.question_link {
+  text-decoration: none; /* Remove underline */
+  color: white;
+  padding: 15px;
+}
+
+/* Apply hover effect to all question links */
+.question_link:hover {
+  font-weight: bold;
+  font-style: italic;
+  color: lightgrey;
+}
+
+/* Applying colour to ordered list */
+ul {
+  color: #e52f20;
+}
+
+/* Question link padding */
+li {
+  padding: 10px;
+}
+
+/* Style for the Chat Now button */
+button {
+  margin-top: 20px;
+}
+
+
+/* REFERENCE
+   nglogic (2023) CSS class override: How to add custom styles the right way? - custom software development: Web and mobile apps: Ng logic, Custom Software Development | Web and Mobile Apps | NG Logic.
+   Available at: https://nglogic.com/css-class-override/#:~:text=A%20common%20way%20of%20CSS,or%20the%20order%20of%20declaration.
+*/
+/* Apply hover effect to the Chat Now button */
+.w3-container button:hover {
+  background-color: #f79917 !important; /* Add !important to override other styles */
+  font-style: italic;
+  font-weight: bold;
+  color: white !important;
+}
+
+/* Topics combobox */
+.w3-half {
+  margin-bottom: 20px;
+  padding: 15px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-card w3-left-align w3-large" id="navigation_colour">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <div class="navbar-items">
+        <h2 href="#" class="title">AliExpress</h2>
+        <div>
+          <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large navbar-item" id="link">Knowledge</a>
+          <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large navbar-item" id="link">Privacy Policy</a>
+        <!-- Return to homepage button -->
+          <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large navbar-item" id="home_link">Return to Homepage</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Header -->
+  <header class="w3-container w3-center">
+    <h1 class="w3-margin w3-jumbo">Help Center</h1>
+    <p class="w3-xlarge">Hi, what can I help you with?</p>
+    <div class="w3-row-padding w3-padding-64 w3-container">
+      <div class="w3-content">
+        <div class="w3-twothird">
+        <!-- REFERENCE
+          Swift, M. (2018) 20 creative search bar design inspirations with HTML/CSS/ bootstrap 4. SimpleSearch Bar, Medium.
+          Available at: https://medium.com/@snow_20352/20-creative-search-bar-design-inspirations-with-html-css-bootstrap-6717109fa0a0.
+        -->
+          <!-- Search bar with magnifying glass button -->
+          <div class="search-container">
+            <input class="w3-input w3-border" type="text" placeholder="Search for questions ..." id="searchBar">
+            <button class="w3-button w3-black w3-padding-large w3-large" id="searchButton"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<!-- REFERENCE
+  W3Schools (2024) W3.CSS Padding, W3.CSS Padding Number Classes.
+  Available at: https://www.w3schools.com/w3css/w3css_padding.asp
+-->
+<!-- First Grid with specific container padding size -->
+  <div class="w3-row-padding w3-padding-32 w3-container" id="askedQuestions">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h3 style="text-align: left; color: white;">Frequently Asked Questions</h3>
+          <div class="questions">
+        <!-- REFERENCE
+            AliExpress (2024) AliExpress | Help Center, Help center.
+            Available at: https://so.aliexpress.com/s/ByrCmn?spm=a2g0o.best.headerAcount.10.4bc22c25Couwhu&language=en_US - frequenctly asked questions
+
+            W3Schools (2024) W3Schools online HTML editor, W3Schools Unordered Lists.
+            Available at: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_disc
+        -->
+          <!-- Combobox list of Frequently Asked questions -->
+            <ul>
+              <li><a href="#" class="question_link">How to check my refund?</a></li>
+              <li><a href="#" class="question_link">My order was closed. What do I do?</a></li>
+              <li><a href="#" class="question_link">The product I received does not match the description. What can I do?</a></li>
+              <li><a href="#" class="question_link">How do I contact the seller?</a></li>
+              <li><a href="#" class="question_link">How do I cancel my order?</a></li>
+              <li><a href="#" class="question_link">How do I track my package?</a></li>
+              <li><a href="#" class="question_link">I cannot find my order in my account</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Second Grid -->
+  <div class="w3-row-padding w3-light-grey w3-padding-32 w3-container" id="topics">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h3>Topics</h3>
+      <!-- Combo boxes -->
+        <div class="w3-row">
+        <!-- REFERENCE
+          W3Schools (2024a) W3.CSS built-in responsiveness, W3.CSS Responsive.
+          Available at: https://www.w3schools.com/w3css/w3css_responsive.asp (Accessed: 04 April 2024).
+        -->
+        <!-- Combobox div -->
+          <div class="w3-half">
+        <!-- REFERENCE
+           W3Schools (2024b) W3Schools online HTML editor, W3Schools Combo Box.
+           Available at: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_input_select_border
+        -->
+          <!-- Comboboxes of Frequently asked questions -->
+            <select class="w3-select w3-border">
+              <option value="" disabled selected>Awaiting Arrival</option>
+              <option value="option1">When will the seller send out the order?</option>
+              <option value="option2">I haven't received my parcel but it shows "Delivered"?</option>
+              <option value="option3">Do I have to pay for customs and import taxes?</option>
+            </select>
+          </div>
+
+          <div class="w3-half">
+            <select class="w3-select w3-border">
+              <option value="" disabled selected>Aftersales</option>
+              <option value="option1">What's Free Return Service?</option>
+            </select>
+          </div>
+
+          <div class="w3-half">
+            <select class="w3-select w3-border">
+              <option value="" disabled selected>Refund</option>
+              <option value="option1">When will I get my refund?</option>
+              <option value="option2">How do I check my credit card refund?</option>
+            </select>
+          </div>
+
+          <div class="w3-half">
+            <select class="w3-select w3-border">
+              <option value="" disabled selected>Ordering & Payment</option>
+              <option value="option1">How to solve payment issues?</option>
+              <option value="option2">How to add card and manage it for payment?</option>
+            </select>
+          </div>
+
+          <div class="w3-half">
+            <select class="w3-select w3-border">
+              <option value="" disabled selected>Account Management</option>
+              <option value="option1">I forgot my password. How can I reset it?</option>
+              <option value="option2">How do I change my email address?</option>
+              <option value="option3">What should I do if I can't sign into my account?</option>
+            </select>
+          </div>
+
+          <div class="w3-half">
+            <select class="w3-select w3-border">
+              <option value="" disabled selected>Coupon and Promotion</option>
+              <option value="option1">How do I get coupons or discounts?</option>
+              <option value="option2">How do I use coupon or discount?</option>
+              <option value="option3">How do I get/use a promo code?</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+      <h2>Need more help?</h2>
+      <p>Online Service (24hrs * 7)</p>
+    <!-- REFERENCE
+        W3Schools (2024b) W3Schools online HTML editor, W3Schools CSS Button Shapes.
+        Available at: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_buttons_shapes
+    -->
+    <!-- Chat Now rounded button -->
+      <button class="w3-button w3-round-large w3-white w3-border w3-border-red w3-text-red w3-padding-large">
+        Chat Now
+      </button>
+  </div>
+
+<!-- Footer -->
+  <footer class="w3-container w3-padding-40 w3-center w3-opacity">
+    <div class="w3-xlarge w3-padding-32">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+   </div>
+   <p>Powered by <a href="" target="_blank">AliExpress</a></p>
+  </footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
